@@ -32,7 +32,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t code-challenge-app ./Docker/Dockerfile
+          docker build -t code-challenge-app -f ./Docker/Dockerfile .
+
           
       - name: Tag Docker image
         run: |

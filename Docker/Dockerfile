@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY ../requirements.txt requirements.txt
+COPY ../Docker/requirements.txt requirements.txt
 
 # Install the Python dependencies
 RUN pip install -r requirements.txt

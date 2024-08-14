@@ -10,7 +10,6 @@ COPY ../Docker/requirements.txt requirements.txt
 # Install the Python dependencies
 RUN pip install -r requirements.txt
 
-
 # Copy the rest of the application code into the container
 COPY . .
 

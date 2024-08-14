@@ -36,7 +36,7 @@ jobs:
           
       - name: Tag Docker image
         run: |
-          docker tag code-challenge-app:latest ${{ secrets.ECR_REGISTRY }}/code-challenge-app:latest
+          docker tag code-challenge-app:latest ${{ secrets.ECR_REGISTRY }}:latest
 
       - name: Push Docker image to Amazon ECR
         run: |

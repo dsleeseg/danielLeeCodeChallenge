@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Specify the command to run the application
-CMD ["python", "app/webApp.py"]
+CMD ["python", "webApp.py"]
 
 # Expose the port on which the app will run
 EXPOSE 8080

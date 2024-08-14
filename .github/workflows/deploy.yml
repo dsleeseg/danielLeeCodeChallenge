@@ -32,8 +32,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t code-challenge-app .
-
+          docker build -t code-challenge-app Docker/Dockerfile
+          
       - name: Tag Docker image
         run: |
           docker tag code-challenge-app:latest ${{ secrets.ECR_REGISTRY }}/code-challenge-app:latest

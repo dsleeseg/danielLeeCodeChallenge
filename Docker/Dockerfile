@@ -14,6 +14,8 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Specify the command to run the application
+RUN pwd
+
 CMD ["python", "/Docker/app/webApp.py"]
 
 # Expose the port on which the app will run

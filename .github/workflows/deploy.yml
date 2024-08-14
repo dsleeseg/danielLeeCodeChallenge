@@ -40,4 +40,4 @@ jobs:
 
       - name: Push Docker image to Amazon ECR
         run: |
-          docker push ${{ secrets.ECR_REGISTRY }}/code-challenge-app:latest
+          docker push ${{ secrets.ECR_REGISTRY }}:latest
